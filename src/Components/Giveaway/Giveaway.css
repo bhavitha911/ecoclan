@@ -1,0 +1,112 @@
+.main-giveaway{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 585px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+}
+.submain-giveaway{
+    justify-content: center;
+    height: 585px;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    background-color: white;
+}
+.giveaway{
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 416px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    color: white;
+    margin-left: 14px!important;
+    margin-top: 12px!important;
+}
+
+.footer_giveaway{
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 18% !important;
+    border-radius: 11px;
+    margin-left: 10px;
+    width: 420px;
+
+}
+.apparel{
+    border: 1px solid;
+    height: 70px;
+    width: 174px !important;
+    margin-left: 38px;
+    border-radius: 13px;
+    margin-top: 27px !important;
+}
+.giff{
+    height: 33px;
+    width: 37px;
+    padding-top: 12px;
+    margin-top: 5px;
+}
+
+
+
+
+
+@media only screen and (max-width: 426px) {
+
+
+    .main-giveaway{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        background: white;
+    }
+    .submain-giveaway{
+        border-radius: 12px;
+        background-color: rgb(248, 235, 285);
+        background-color: white;
+        height: 304px;
+        width: 614px;
+    }
+    .giveaway{
+        display: flex;
+        justify-content: center;
+        height: 57px;
+        width: 380px;
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        border-radius: 14px;
+        color: white;
+        margin-left: 20px !important;
+        margin-top: 11px !important;
+    }
+    .footer_giveaway{
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        height: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 38.5% !important;
+        border-radius: 11px;
+        margin-left: 20px;
+        width: 380px;
+    
+    }
+    .select-give{
+        padding-top: 20px;
+    }
+    .apparel{
+        border: 1px solid;
+        height: 70px;
+        width: 174px !important;
+        margin-left: 30px;
+        border-radius: 13px;
+        margin-top: 37px !important;
+    }
+
+}
+
+

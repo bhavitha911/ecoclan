@@ -1,0 +1,167 @@
+.main_Portion{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 585px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+}
+.main_half{
+    justify-content: center;
+    border-radius: 12px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    height: 585px;
+    padding: 7px 10px 0px 10px;
+
+}
+.wallet-over{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 420px;
+}
+.wallett{
+    display: flex; 
+    height: 57px;
+    width: 405px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    margin-left: 22px;
+}
+.pict{
+    height:56px;
+    width:50px;
+}
+.logoutt{
+    height: 47px;
+    width: 34px;
+}
+.available{
+    width: 164px;
+    padding-top: 10px;
+    font-weight: 600;
+
+
+}
+.redee{
+    
+    
+    background-color: black;
+    border-radius: 17px;
+    color: white;
+    font-weight: 400;
+
+}
+.mobi{
+    height: 47px;
+    width: 60px;
+    margin-top: 15px;
+}
+.mobis{
+    height: 47px;
+    width: 60px;
+    margin-top: 12px;
+}
+.boh{
+    display: flex;
+    justify-content: flex-end;
+    height: 48px;
+    width: 391px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 5px;
+    margin-left: 35px;
+}
+.gifh{
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.gifths{
+    height: 35px;
+    width: 41px;
+}
+.currencyy{
+    display: flex;
+    text-align: justify;
+}
+
+
+.body_wallet{
+    height: 450px;
+}
+.footer_wallet{
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 17px;
+    border-radius: 12px;
+
+}
+.gifths{
+    height: 35px;
+    width: 41px;
+    
+}
+
+
+@media only screen and (max-width: 426px) {
+    .main_Portion{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        background: white;
+    }
+    .main_half{
+        border-radius: 12px;
+        background-color: rgb(248, 235, 285);
+        background-color: white;
+        height: 304px;
+        width: 614px;
+    
+    }
+    .wallett-head{
+        margin-left: 10px;
+        width: 360px;
+        border-radius: 12px;
+    }
+    .arrowwback{
+        display: flex;
+        justify-content: start;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .footer_wallet{
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        height: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 180px;
+        border-radius: 12px;
+        width:360px;
+        margin-left: 10px;
+    
+    }
+    .wallet-over{
+           overflow: hidden;
+           max-height:800px;
+        
+       
+    }
+    .utility{
+        margin-top: 5px;
+    }
+    .payment{
+        margin-top: 5px;
+
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,161 @@
+
+.schedule-main{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 585px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+}
+.schedule-submain{
+    justify-content: center;
+    height: 585px;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    background-color:lightblue;
+
+}
+.upcoming{
+    font-size:25px ;
+    font-weight:500;
+    padding-top:2px ;
+}
+.schedule{
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 423px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 12px;
+    color: white;
+    margin-left: 10px !important;
+    margin-top: 1px !important;
+}
+.schedule-heightt{
+    height: 70px;
+    width: 400px!important;
+    background-color: white;
+    margin-left: 20px!important;
+    padding-top: 20px;
+    margin-top: 27px!important;
+    border-radius: 7px;
+
+}
+.schedule-cir{
+    font-size: xx-large;
+    margin-top: -12px;
+
+
+}
+.schedule-cardd{
+    overflow-y: scroll;
+    overflow-x: hidden;
+height: 462px;
+}
+.poly{
+    width: 100px;
+    margin-top: -6px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.opacity1 {
+    margin-top: -25px;
+    fill: green;
+    font-size: xx-large;
+    margin-left: -150px;
+    margin-top: 5px;
+   
+}
+.opacity11 {
+    margin-top: -25px;
+    fill: red;
+    font-size: xx-large;
+    margin-left: -150px;
+    margin-top: 5px;
+}
+
+
+
+@media only screen and (max-width: 426px) {
+
+
+.schedule-main{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background: white;
+    height:280px ;
+}
+.schedule-submain{
+    border-radius: 5px;
+        background-color: rgb(248, 235, 285);
+        background-color:lightblue;
+        height: 740px;
+        width: 100%;
+
+}
+.schedule-cardd{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:550px;
+}
+.schedule-pick{
+    margin-top: 210px;
+
+
+}
+.schedule{
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 350px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 12px;
+    color: white;
+    margin-left: 20px !important;
+    margin-top: 10px !important;
+}
+
+.opacity1 {
+    margin-top: -6px;
+    fill: green;
+    font-size: xx-large;
+    margin-left: -150px;
+
+}
+.poly{
+    width: 100px;
+    margin-top: -6px;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+.opacity11 {
+    margin-top: -25px;
+    fill: red;
+    font-size: xx-large;
+    margin-left: -150px;
+    margin-top: 5px;
+}
+.schedule-pick{
+    margin-top: 65px;
+}
+.upcoming{
+    font-size:20px ;
+    font-weight:600;
+    padding-top:2px ;
+}
+.schedule-heightt{
+    height: 70px;
+    width: 350px!important;
+    background-color: white;
+    margin-left: 20px!important;
+    padding-top: 20px;
+    margin-top: 27px!important;
+    border-radius: 7px;
+
+}
+
+
+
+}

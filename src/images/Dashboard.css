@@ -1,0 +1,124 @@
+.main {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 645px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+  }
+  
+  .submain {
+    justify-content: center;
+    height: 645px;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    background-color: white;
+  }
+  
+  .ecoclan {
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 390px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    color: white;
+    margin-left: 20px;
+  }
+  .headtotal{
+    margin-left: 5px;
+    padding-top: 21px;
+    width: 252px;
+}
+.boxed{
+    margin-left: 10px;
+    color: black;
+    width: 218px;
+
+}
+.pics{
+    height: 128px;
+    width: 153px;
+    padding-top: 20px;
+}
+.impact{
+    margin-left: 6px;
+    font-size: 19px;
+    font-weight: 700;
+    padding-top: 1px;
+}
+.tap{
+    height: 37px;
+    width: 69px;
+    padding-top: 1px;
+}
+.water{
+    margin-top: -6px;
+}
+.energy{
+    height: 63px;
+    width: 41px;
+    padding-top: 10px;
+}
+.oil{
+    height: 31px;
+    width: 57px;
+    padding-top: 3px;
+    padding-bottom: -7px;
+    margin-bottom: -1px;
+}
+.tree{
+    height: 31px;
+    width: 57px;
+    padding-top: 2px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    height: 42px;
+    width: 417px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 18px;
+
+}
+.elimi{
+    margin-top: -8px;
+}
+.air{
+    height: 36px;
+    width: 48px;
+    padding-top: -2px;
+    margin-top: -10px;
+}
+.land{
+    height: 36px;
+    width: 48px;
+    padding-top: -2px;
+    margin-top: -10px;
+
+}
+
+.gifts{
+    height: 37px;
+    width: 41px;
+    padding-top: 10px;
+    row-gap: 4;
+
+}
+.dashboard{
+    position: relative;
+}
+.logout{
+    width: 34px;
+    height: 38px;
+    position: absolute;
+    top: 17%;
+    left: 78%;
+}
+.material{
+    color: green;
+    font-weight: 900;
+}
+

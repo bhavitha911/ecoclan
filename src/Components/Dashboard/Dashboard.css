@@ -1,0 +1,259 @@
+.main-dashboard {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+  }
+  
+  .submain-dashboard {
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    background-color: white;
+    height: 585px;
+  }
+  
+  .ecoclan {
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 419px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    color: white;
+    margin-left: 11px;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-top: 4px;
+    margin-top: -3px;
+
+  }
+  .headtotal{
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0REM;
+}
+.boxed{
+    margin-left: 10px;
+    color: black;
+    width: 218px;
+
+}
+.pics{
+    height: 98px;
+    width: 153px;
+    padding-top: 0px;
+}
+.impact{
+    margin-left: -4px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+.text-successs{
+    color: green;
+    font-weight: 700;
+    font-size: 21px;
+
+}
+.tap{
+    height: 30px;
+    width: 30px;
+}
+.water{
+    margin-top: -10px;
+    font-size: 17px;
+}
+.energy{
+    height: 63px;
+    width: 41px;
+    padding-top: 10px;
+}
+.oil{
+    height: 30px;
+    width: 30px;
+    padding-top: 3px;
+    padding-bottom: -7px;
+    margin-bottom: -1px;
+}
+.trees{
+    height: 30px;
+    width: 35px;
+    padding-top: 3px;
+    padding-bottom: -7px;
+    margin-bottom: -1px;
+}
+
+.elimi{
+    margin-top: -8px;
+}
+.air{
+    height: 30px;
+    width: 30px;
+    padding-top: -2px;
+    margin-top: -10px;
+}
+.land{
+    height: 30px;
+    width: 30px;
+    padding-top: -2px;
+    margin-top: -10px;
+
+}
+.elimi{
+    color:red;
+    font-weight: 600;
+    font-size: 25px;
+
+}
+
+.giftss{
+    height: 40px;
+    width: 46px;
+    padding-top: 10px;
+    row-gap: 4;
+    transition:0.3s ;
+
+
+}
+.giftss:hover{
+    transform: translateY(-3px);
+    background-color: white;
+
+    
+}
+.dashboard{
+    position: relative;
+}
+.logout{
+    width: 27px;
+    height: 28px;
+    position: absolute;
+    top: 30%;
+    left: 78%;
+}
+.material{
+    color: #40c543;
+    font-weight: 700;
+    font-size: 25px;
+}
+.footer_dashboard{
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    height: 50px;
+    margin-left: 5px;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    width: 415px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+
+@media only screen and (max-width: 426px){
+
+    .main-dashboard {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        background: white;
+      }
+      .submain-dashboard {
+        border-radius: 5px;
+        background-color: rgb(248, 235, 285);
+        background-color: white;
+        height: 604px;
+        width: 614px;
+      }
+      
+      .ecoclan {
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        width: 350px;
+        margin-left: 20px;
+    
+      }
+      .headtotal{
+        font-weight: 600;
+        font-size: 15px;
+        margin: 0REM;
+        margin-left:12.5px;
+        margin-top: 20px;
+        width: 200px;
+    }
+    .impact{
+        margin-left: -4px;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        margin-top: 30px;
+    }
+    .text-successs{
+        color: green;
+        font-weight: 700;
+        font-size: 21px;
+        margin-top: 20px;
+    
+    }
+    .tap{
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+    }
+    .pics{
+        height: 98px;
+        width: 153px;
+        padding-top: 20px;
+    }
+    .oil{
+        height: 30px;
+        width: 30px;
+        padding-top: 3px;
+        padding-bottom: -7px;
+        margin-bottom: -1px;
+        margin-top: 20px;
+    }
+    .trees{
+        height: 30px;
+        width: 35px;
+        padding-top: 3px;
+        padding-bottom: -7px;
+        margin-bottom: -1px;
+        margin-top: 20px;
+
+    }
+    .elimi{
+        color:red;
+        font-weight: 600;
+        font-size: 25px;
+        margin-top: 20px;
+
+    
+    }
+    .air{
+        height: 30px;
+        width: 30px;
+        padding-top: -2px;
+        margin-top: 20px;
+    }
+    .land{
+        height: 30px;
+        width: 30px;
+        padding-top: -2px;
+        margin-top: 20px;
+    
+    }
+    .footer_dashboard{
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        height: 50px;
+        margin-left: 11px;
+        right: 0;
+        bottom: 0;
+        border-radius: 10px;
+        width: 350px;
+        border-radius: 10px;
+        margin-top: 54.5px;
+        
+    }
+}

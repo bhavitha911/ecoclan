@@ -1,0 +1,97 @@
+
+.metal_body{
+    height:389px;
+}
+
+.metal-submain-body{
+    height: 320px;
+    width: 409px;
+    border: 2px solid black;
+    border-radius: 14px;
+    margin-left: -2px;
+    margin-top: 20px;
+
+}
+.next_butto{
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    height: 37px;
+    width: 214px;
+    margin-top: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.metal_section{
+    height:10px;
+    width: 20px;
+    margin-top: 20px;
+}
+.metal_section-part{
+    color: rgb(3, 148, 3);
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.metal_third{
+    margin-left: 4px;
+    margin-top: 15px;
+    font-size: 14px;
+
+    
+}
+.metal-container {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    height: 26px;
+    margin-left: 28px;
+
+
+
+}
+.metal-container button {
+    margin: 5px 18px;
+    height: 26px;
+    width: 22px;
+    padding-left: 3px;
+    margin-left: 28px;
+
+
+
+}
+.metal{
+    text-decoration: none;
+    color: white;
+}
+
+.price {
+    margin: 0px 8px;
+
+    height: 26px;
+    
+
+}
+
+.metal_thirdd{
+        margin-left: 16px;
+    margin-top: 15px;
+    font-size: 15px;
+    width: 113px;
+}
+
+
+
+@media only screen and (max-width: 426px) {
+    .metal-submain-body{
+        height: 320px;
+        width: 379px;
+        border: 2px solid black;
+        border-radius: 14px;
+        margin-left: -2px;
+        margin-top: 30px;
+    
+    }
+   
+}

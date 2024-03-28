@@ -1,0 +1,139 @@
+.Schepickup-main{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 585px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+}
+.Schepickup-submain{
+    justify-content: center;
+    height: 585px;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    background-color: white;
+}
+.SchePickup{
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 422px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    color: white;
+    margin-left: 11px !important;
+    margin-top: 11px !important;
+}
+.timee{
+    border-radius: 12px;
+    margin-top: 8px;
+    height: 45px;
+    width: 278px;
+    justify-content: center;
+    padding-left: 76px;
+    border: 2px solid black;
+
+}
+.submitt{
+    border-radius: 12px;
+    margin-top: 5px;
+    height: 47px;
+    width: 278px;
+    padding-left: 25px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border: none;
+
+
+
+}
+.schepickup-box{
+    display: flex;
+    justify-content: center;
+    height: 53px;
+    width: 405px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 11px;
+    color: white;
+    margin-top: 23px;
+    margin-left: 19px;
+
+}
+.footer_schepickup{
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 422px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    color: white;
+    margin-left: 11px !important;
+    margin-top: 20% !important;
+}
+
+
+
+@media only screen and (max-width: 426px) {
+    .Schepickup-main{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        background: white;
+    }
+    .Schepickup-submain{
+        border-radius: 5px;
+        background-color: rgb(248, 235, 285);
+        background-color: white;
+        height: 304px;
+        width: 614px;
+    }
+    .schepick{
+        margin-left: 55px;
+    }
+    .SchePickup{
+        display: flex;
+        justify-content: center;
+        height: 57px;
+        width: 370px;
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        border-radius: 14px;
+        color: white;
+        margin-left: 20px !important;
+        margin-top: 11px !important;
+    }
+    .pickuped{
+        margin-left: 35px;
+
+    }
+    .schedate{
+        margin-left: 40px;
+    }
+    .timee{
+       
+        margin-left: 30px;
+    
+    }
+    .submitt{
+        border-radius: 12px;
+        margin-top: 5px;
+        height: 47px;
+        width: 278px;
+        padding-left: 25px;
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        border: none;
+        margin-left: 73px;
+    
+    
+    
+    }
+    .footer_schepickup{
+        display: flex;
+        justify-content: center;
+        height: 57px;
+        width: 370px;
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        border-radius: 14px;
+        color: white;
+        margin-left: 20px !important;
+        margin-top: 69% !important;
+    }
+}

@@ -1,0 +1,291 @@
+.main-profile {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 585px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+
+}
+
+.submain-profile {
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    padding: 7px 10px 0px 10px;
+    height: 585px;
+}
+
+.Profilee {
+    display: flex;
+    height: 57px;
+    width: 405px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    margin-left: 22px;
+    margin-top: 10px;
+
+}
+
+.pick {
+    height: 62px;
+    width: 45px;
+}
+
+.logouti {
+    height: 26px;
+    width: 23px;
+    margin-top: 16px;
+}
+
+.boxh {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 57px;
+    width: 426px !important;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 13px;
+
+}
+
+.giftk {
+    height: 35px;
+    width: 41px;
+
+
+
+}
+
+.gifted {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.information {
+    justify-content: flex-start;
+    margin-left: 20px;
+    padding-top: 21px;
+    text-align: flex-start;
+
+}
+
+.Personal {
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    width: 379px;
+    padding-top: 3px;
+    height: 31px;
+    margin-left: 23px;
+    padding-left: 18px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.enter {
+    background-color: white;
+    width: 373px;
+    margin-left: 12px;
+    padding-top: 10px;
+    margin-top: -6px;
+    height: 265px;
+    padding-left: 13px;
+
+}
+
+.location {
+    justify-content: flex-start;
+    margin-left: 35px;
+    text-align: flex-start;
+}
+
+.locate {
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    width: 379px;
+    padding-top: 3px;
+    height: 31px;
+    padding-left: 18px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.entered {
+    background-color: white;
+    width: 379;
+    width: 378px;
+    margin-left: 1px;
+    margin-top: -7px;
+    padding-left: 10px;
+    height: 90px;
+
+}
+
+.panel {
+    justify-content: flex-start;
+    margin-left: 20px;
+    text-align: flex-start;
+}
+
+.panelr {
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    width: 382px;
+    padding-top: 3px;
+    height: 31px;
+    margin-left: 14px;
+    display: flex;
+    padding-left: 19px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.add {
+    background-color: white;
+    width: 379;
+    width: 386px;
+    margin-left: 12px;
+    margin-top: -7px;
+    padding-left: 11px;
+    height: 101px;
+}
+
+.body_profile {
+    height: 450px;
+}
+
+.footer_profile {
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 60px;
+    border-radius: 5px;
+
+}
+
+.gifths {
+    height: 35px;
+    width: 41px;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 426px) {
+    .main-profile {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        background: white;
+
+    }
+
+    .submain-profile {
+        border-radius: 5px;
+        background-color: rgb(248, 235, 285);
+        background-color: white;
+        height: 604px;
+        width: 614px;
+    }
+
+    .user-profile {
+        margin-top: 10px;
+        width: 360px;
+        margin-left: 5px;
+
+    }
+
+    .back {
+        margin-left: 10px;
+    }
+
+    .Personal {
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        width: 300px;
+        padding-top: 3px;
+        height: 31px;
+        margin-left: 40px;
+        padding-left: 18px;
+        display: flex;
+        font-size: 15px;
+        font-weight: 700;
+
+    }
+
+    .locate {
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        width: 300px;
+        padding-top: 3px;
+        height: 31px;
+        padding-left: 18px;
+        display: flex;
+        font-size: 15px;
+        font-weight: 700;
+        margin-left: 17px;
+
+    }
+
+    .panelr {
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        width: 300px;
+        padding-top: 3px;
+        height: 31px;
+        margin-left: 14px;
+        display: flex;
+        padding-left: 19px;
+        font-size: 15px;
+        font-weight: 700;
+        margin-left: 32px;
+
+    }
+
+    .footer_profile {
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        height: 50px;
+        right: 0;
+        bottom: 0;
+        border-radius: 10px;
+        border-radius: 10px;
+        margin-top: 212.5px;
+        width: 360px;
+        margin-left: 5px;
+
+    }
+    .enter {
+        background-color: white;
+        height: 265px;
+        width: 306px;
+      
+    
+    }
+    .entered {
+        background-color: white;
+        height: 265px;
+        width: 306px;
+      
+    
+    }
+   .add{
+    background-color: white;
+    height: 265px;
+    width: 306px;
+   }
+    .Personal {
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        padding-top: 3px;
+        height: 31px;
+        padding-left: 18px;
+        display: flex;
+        font-size: 15px;
+        font-weight: 700;
+
+    }
+   
+}

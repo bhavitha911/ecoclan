@@ -1,0 +1,237 @@
+  
+  .main-login {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 585px;
+    background: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+  }
+  
+  .submain-login {
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    background-color: white;
+    height: 580x;
+  }
+  
+  .ecoclaned {
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    width: 420px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: -5px;
+
+  }
+  .to{
+    font-size: 2rem;
+    font-weight: 500;
+    color:black;
+    
+    letter-spacing: -0.5px;
+    margin-top: -16px;
+
+
+
+  }
+  .form-detailed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .login_space{
+    margin-top: -12px;
+  }
+  .forms {
+    text-align: center;
+    width: 304px;
+    margin-bottom: 0%;
+    padding-top: -14px;
+    margin-top: 3px;
+    margin-left: -16px;
+  }
+  #star-change{
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 5px;
+  }
+  
+  .label-headd{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 1%;
+    margin-left: 8px;
+    display: flex;
+    text-align: left;
+    margin-top: -30px;
+    padding-top: 9px;
+  }
+  .label-headdd{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 1%;
+    margin-left: 8px;
+    display: flex;
+    text-align: left;
+    margin-top: -19px;
+  }
+
+  .input_valuee{
+   width: 278px;
+    height: 47px;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 16px;
+    margin-top: -4%;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  .OTPP{
+    height: 46px;
+    width: 279px;
+    margin-top: -5%;
+    padding: 7px 7px;
+    background: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 14px;
+
+  }
+ 
+  .new-user{
+    justify-content: flex-start;
+    display: flex;
+    padding-left: 18px;
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 7px;
+
+  }
+  .neww{
+    color: grey;
+    font-weight: 900;
+
+  }
+  .userr{
+    text-decoration: none;
+    color:#50c73c;
+    font-weight: 900;
+    margin-left: 5px;
+
+  }
+  .form-hed{
+    height: 200px;
+  }
+  .login-space{
+    margin-top: -9px;
+  }
+  
+  
+  .euser{
+    display: flex;
+    justify-content: flex-start;
+    width: 231px;
+    margin-top: 0%;
+  }
+  .log{
+    color: green;
+    margin-left: 2%;
+  }
+  .boxg{
+    height: 50px;
+    width: 420px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 9px;
+    margin-left: 12px;
+    margin-top: 164px;
+
+}
+  
+  .hellow{
+    margin-left:10px !important;
+    text-align: center !important;
+  }
+  .marks{
+    display: flex;
+    text-align: left;
+  }
+  .eye-icon{
+   position: absolute;
+    margin-left: -31px;
+  }
+
+/* ---------------------------------------426-------------------------------------------------- */
+
+
+
+
+ @media only screen and (max-width: 426px) {
+    .main-login {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      background: white;
+    }
+
+    .submain-login {
+      border-radius: 5px;
+      background-color: rgb(248, 235, 285);
+      background-color: white;
+      height: 704px;
+      width: 614px;
+
+    }
+    .ecoclaned {
+      background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+      width: 360px;
+      
+    }
+    .boxg{
+      height: 50px;
+      width: 360px;
+      background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+      border-radius: 9px;
+      margin-left: 20px;
+      margin-top: 288px;
+  
+  }
+    .to {
+      font-size: 2rem;
+      font-weight: 600;
+      color: black;  
+      letter-spacing: -1px;
+      margin-top: 18px;
+    }
+    
+    
+    
+     .label-headd{
+      font-size: 16px;
+      font-weight: 700;
+      color: black;
+      margin-bottom: -1%;
+      margin-left: 8px;
+      display: flex;
+      margin-top: -28px;
+  }
+  .neww{
+    color: grey;
+    font-weight: 900;
+    margin-top: -3 px;
+
+  }
+    
+   
+
+  } 

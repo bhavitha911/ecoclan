@@ -1,0 +1,223 @@
+.main-user {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+  }
+  
+  .submain-user {
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    background-color: white;
+    height: 585px;
+  }
+  .Account{
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 421px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    color: white;
+    margin-left: 11px !important;
+    margin-top: 11px !important;
+  }
+  .acco{
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 7px;
+
+  }
+  .pic{
+    height: 62px;
+    width: 45px;
+  }
+  .logouted{
+    height: 26px;
+    width: 23px;
+    margin-top: 16px;
+  }
+ 
+  .mainpart{
+ 
+    margin-left: 11px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    align-items: center;
+
+
+    
+  }
+  .head-user{
+    margin-top: 25px;
+  }
+  .person{
+    font-size: 33px;
+    color: red;
+    margin-left: -22px;
+    height: 40px;
+    width: 22px;
+  }
+  .profile{
+  color: black;
+  padding-top: 10px;
+  margin: 1px 0 0 -175px;
+
+
+ }
+ 
+    .royal{
+      height: 2rem;
+      width: 1rem;
+      margin-top: 5px;
+      margin-left: 28px;
+
+       }
+  .liner{
+    height: 2px;
+    width: 86% !important;
+    background-color: grey;
+    margin-top: 7px !important;
+    margin-left: 20px !important;
+}
+
+
+  .wallet{
+    color: black;
+  padding-top: 10px;
+  margin: 1px 0 0 -201px;
+
+  }
+  .per{
+    font-size: 33px;
+    color: red;
+    margin-left: 14px;
+    height: 40px;
+    width: 22px;
+    margin-top: -20px;
+ }
+ .perr{
+  font-size: 33px;
+  color: red;
+  margin-left: 14px;
+  height: 40px;
+  width: 22px;
+  margin-top: -41px;
+}
+ .royale{
+  height: 1rem;
+  width: 1rem;
+  margin-top: -20px;
+}
+.royales{
+  height: 1rem;
+  width: 1rem;
+  margin-top: -42px;
+}
+
+
+
+  .summary{
+    color: black;
+  padding-top: 10px;
+  margin: 1px 0 0 -123px;
+  
+  }
+  .pickup{
+    color: black;
+  padding-top: 10px;
+  margin: 1px 0 0 -100px;
+
+  }
+  .more{
+    color: black;
+  padding-top: 10px;
+  margin: 1px 0 0 -193px;
+  }
+  .footer_user{
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    height: 50px;
+    margin-left: 14px;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    width: 417px;
+    border-radius: 10px;
+    margin-top: 68.5px;
+  }
+  .gifts{
+    height: 40px;
+    width: 41px;
+    padding-top: 10px;
+    transition: 0.5s;
+
+}
+.gifts:hover{
+  background-color: white;
+  transform: translateY(-3px);
+
+
+
+}
+
+.gift{
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 426px){
+
+  .main-user {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background: white;
+  }
+  
+  .submain-user {
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    background-color: white;
+    height: 704px;
+    width: 614px;
+  }
+  .Account{
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 360px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    color: white;
+    margin-left: 16px!important;
+    margin-top: 11px; 
+  }
+  .head-user{
+    margin-top: 40px;
+  }
+  .footer_user{
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        height: 50px;
+        right: 0;
+        bottom: 0;
+        border-radius: 10px;
+        width: 360px;
+        border-radius: 10px;
+        margin-top:216.5px;
+  }
+ 
+  
+ 
+}

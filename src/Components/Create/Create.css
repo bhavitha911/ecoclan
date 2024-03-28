@@ -1,0 +1,171 @@
+.main-create {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+  }
+  
+  .submain-create {
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    background-color: white;
+  }
+  
+  .ecoclann {
+    
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 418px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    color: white;
+    margin-left: 12px;
+    margin-top: -6px;
+    font-weight: 500;
+    font-size: 2rem;    
+  }
+  .form-detailed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .forms {
+    text-align: center;
+    width: 304px;
+    margin-bottom: 5%;
+    margin-left: -9px;
+  }
+  
+  .label-head{
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: -2%;
+    margin-left: 22px;
+    display: flex;
+    margin-top: -27px;
+  }
+  .label-headsd{
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: -2%;
+    margin-left: 23px;
+    display: flex;
+    margin-top: -15px;
+  }
+  .input_valued{
+    width: 272px;
+    height: 44px;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 16px;
+    margin-top: -4%;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-left: 17px;
+  }
+  .OTP{
+    height: 43px;
+    width: 271px;
+    border-radius: 13px;
+    margin-top: -4%;
+    padding: 10px 8px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin-left: 11px;
+  }
+  .welcomee{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: -30px;
+    letter-spacing: -1px;
+  }
+  .otp-link{
+    font-weight: 700;
+    color: black;
+    font-size: 21px;
+  }
+  .formse{
+    margin-top: 1px;
+  }
+  
+  
+  .euser{
+    display: flex;
+    justify-content: flex-start;
+    width: 231px;
+    margin-top: -3%;
+  }
+  .log{
+    color: green;
+    margin-left: 2%;
+  }
+  .boxey{
+    height: 57px;
+    width: 414px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 10px;
+    margin-top: 31%;  
+  }
+  .hellow{
+    display: flex;
+    justify-content: left;
+    text-align: center !important;
+    margin-left: 62px;
+    margin-top: -9px;
+    font-size: medium;
+    font-weight: 600;
+  }
+  
+
+  .eye-icon{
+    position: absolute;
+    margin-left: -31px;
+  }
+  .marks{
+    margin-left:20px;
+  }
+
+
+
+
+
+
+
+  @media only screen and (max-width: 426px){
+    .main-create {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      background: white;
+    }
+      .submain-create {
+      border-radius: 5px;
+      background-color: rgb(248, 235, 285);
+      background-color: white;
+      height: 704px;
+      width: 614px;
+    }
+    .ecoclann {
+    
+      background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+      width: 360px;    
+    }
+    .boxey{
+      height: 53px;
+      background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+      border-radius: 9px;
+      width: 360px;
+      margin-top: 306px;
+    }
+  }

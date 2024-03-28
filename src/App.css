@@ -1,0 +1,207 @@
+
+
+
+/* --------------------------global-css------------ */
+.main-signup {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+}
+
+.submain-signup {
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgb(248, 235, 285);
+  width: 35%;
+  background-color: white;
+  height: 585px;
+}
+
+.ecoclang {
+  display: flex;
+  justify-content: center;
+  height: 57px;
+  width: 414px;
+  background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+  border-radius: 14px;
+  color: white;
+
+  font-size: 2rem;
+  font-weight: 500;
+
+ 
+}
+.come{
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-top: -14px;
+
+}
+.form-detailed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.forms {
+  text-align: center;
+  width: 304px;
+  margin-bottom: 0%;
+  padding-top: -14px;
+  margin-top: 3px;
+  margin-left: -16px;
+}
+
+.label-heading{
+  font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: -1%;
+    margin-left: 18px;
+    display: flex;
+    margin-top: -33px;
+}
+.label-headingg{
+  font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: -1%;
+    margin-left: 18px;
+    display: flex;
+    margin-top: -25px;
+
+}
+.input_value{
+  width: 278px;
+  height: 47px;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 16px;
+  margin-top: -4%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.OTPp{
+  height: 46px;
+    width: 284px;
+    border-radius: 14px;
+    margin-top: -5%;
+    padding: 10px 8px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border: none;
+    margin-left: 5px;
+    border:2px solid black;
+
+}
+
+
+.euser{
+  display: flex;
+  justify-content: flex-start;
+  width: 231px;
+  margin-top: 0%;
+}
+.logg{
+  color: #50c73c;
+  margin-left: 10%;
+  margin-top: -6px;
+  text-decoration: none;
+  margin-left: 6px;
+  font-weight: 900;
+  letter-spacing: 0px;
+  font-size: 13px;
+
+}
+.log-space{
+  margin-top: -3px;
+
+}
+.boxer{
+  height: 50px;
+    width: 420px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 9px;
+    margin-left: 14px;
+    margin-top: 164px;
+}
+.hellow{
+  margin-left:10px !important;
+  text-align: center !important;
+}
+.marks{
+  display: flex;
+  text-align: left;
+}
+.sign-header{
+  height: 200px;
+}
+.existing{
+  color: grey;
+  font-weight: 900;
+  margin-left: -21px;
+  margin-top: -6px;
+  letter-spacing: 0px;
+  font-size: 13px;
+
+
+}
+@media only screen and (max-width: 426px){
+  .main-signup {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background: white;
+  }
+  .submain-signup {
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    background-color: white;
+    height: 704px;
+    width: 614px;
+  }
+  .ecoclang {
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    width: 360px;
+  
+   
+  }
+  .boxer{
+    height: 53px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 9px;
+    width: 360px;
+    margin-top: 291px;
+  }
+  .come{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-top: 12px;
+  
+  }
+  .label-heading{
+  font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: -1%;
+    margin-left: 23px;
+    display: flex;
+    margin-top: -33px;
+}
+.label-headingg{
+  font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: -1%;
+    margin-left: 23px;
+    display: flex;
+    margin-top: -25px;
+
+}
+
+}

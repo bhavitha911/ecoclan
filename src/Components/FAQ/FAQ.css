@@ -1,0 +1,90 @@
+.faq-main{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 585px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+}
+.faq-submain{
+    justify-content: center;
+    height: 585px;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    background-color: white;
+}
+.faq{
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    width: 416px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 14px;
+    color: white;
+    margin-left: 14px !important;
+    margin-top: 12px !important;
+}
+.order{
+    color: black;
+}
+.footer_faq{
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top:5%!important;
+    border-radius: 5px;
+
+}
+.faq-scroll{
+      overflow-x: hidden;
+      overflow-y: scroll;
+      max-height: 400px;  
+}
+
+
+@media only screen and (max-width: 426px) {
+    .faq-main{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        background: white;
+    }
+    .faq-submain{
+        border-radius: 12px;
+        background-color: rgb(248, 235, 285);
+        background-color: white;
+        height: 304px;
+        width: 614px;
+    }
+    .faq{
+        display: flex;
+        justify-content: center;
+        height: 57px;
+        width: 360px;
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        border-radius: 14px;
+        color: white;
+        margin-left: 20px !important;
+        margin-top: 11px !important;
+    }
+    .footer_faq{
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        height: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 39px!important;
+        border-radius: 12px;
+        width: 360px !important;;
+        margin-left: 2px;
+    
+    }
+    .faq-scroll{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        max-height: 540px;  
+  }
+}
+

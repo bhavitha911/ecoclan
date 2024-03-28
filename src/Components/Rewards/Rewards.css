@@ -1,0 +1,144 @@
+.rewards-main{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 585px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+}
+.rewards-submain{
+    justify-content: center;
+    height: 585px;
+    border-radius: 5px;
+    background-color: rgb(248, 235, 285);
+    width: 35%;
+    background-color: white;
+}
+.rewards{
+  display: flex;
+  justify-content: center;
+  height: 58px;
+  width: 423px;
+  background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+  border-radius: 14px;
+  color: white;
+  margin-left: 11px !important;
+  margin-top: 9px !important;
+}
+.rewards-scroll{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 468px;
+}
+.forest{
+  height: 210px;
+  width: 413px;
+   background: url("../../images/forest_img.webp");
+}
+  .tree{
+    height: 68px;
+    width: 80px;
+  }
+  .share{
+    background-color: blue;
+    border-radius: 20px;
+    height: 43px;
+    border: 2px solid black;
+    color: white;
+    width: 183px;
+
+  }
+  .reward-box{
+    display: flex;
+    justify-content: center;
+    height: 49px;
+    width: 405px;
+    background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+    border-radius: 11px;
+    color: white;
+    margin-top: 4px;
+    margin-left: 19px;
+  }
+ .reward_textsize{
+  font-size: 20px;
+  color: green;
+  font-weight: 600;
+ }
+ .burning{
+  color: green;
+  height: 100px;
+  width:100px;
+ }
+ .footer_rewards{
+  background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+  height: 48px;
+  margin-left: 11px;
+  right: 0;
+  bottom: 0;
+  margin-top: 0px;
+  border-radius: 10px;
+  width: 423px;
+  border-radius: 10px;
+ }
+
+
+
+
+ @media only screen and (max-width: 426px) {
+  .rewards-main{
+    text-align: center;
+        justify-content: center;
+        display: flex;
+        background: white;
+}
+.rewards-submain{
+  border-radius: 12px;
+  background-color: rgb(248, 235, 285);
+  background-color: white;
+  height: 304px;
+  width: 614px;
+}
+.rewards{
+  display: flex;
+        justify-content: center;
+        height: 57px;
+        width: 380px;
+        background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+        border-radius: 14px;
+        color: white;
+        margin-left: 35px !important;
+        margin-top: 11px !important;
+}
+.rewards-arrow{
+  display: flex;
+  margin-left:50px;
+  color: black;
+  justify-content: start;
+  margin-top: -10px;
+  
+}
+.plant-reward{
+  margin-top: -20px;
+  margin-left: 125px;
+}
+.order-rewards{
+  margin-left: 20px;
+}
+.footer_rewards{
+  background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
+  height: 48px;
+  margin-left: 40px!important;
+  right: 0;
+  bottom: 0;
+  margin-top: 160px;
+  border-radius: 12px;
+  width: 370px;
+  border-radius: 10px;
+ }
+ .rewards-scroll{
+  overflow: scroll;
+  overflow-x: hidden;
+
+  max-height: 500px;
+}
+
+ }
