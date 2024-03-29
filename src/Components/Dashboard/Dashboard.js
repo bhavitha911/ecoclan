@@ -19,20 +19,20 @@ import { Col, Row } from 'antd';
 import axios from 'axios';
 
 const Dashboard = () => {
-    const [category, setCategory] = useState([]);
+    const [category, setCategorys] = useState([]);
 
     useEffect(() => {
         const str = localStorage.getItem("auth")?.replace(/^"|"$/g, "");
         if (str) {
             const headers = {
                 "Content-Type": "application/json",
-                Authorization: `Bearer ${str}`
+                Authorization: `Bearer ${str}` 
             };
 
             axios.get("http://192.168.29.47:5000/api/dashboard-metric ", { headers })
                 .then((response) => {
                     console.log(response);
-                    setCategory(response.data);
+                    setCategorys(response.data);
                 })
                 .catch((error) => {
                     console.log(error);
