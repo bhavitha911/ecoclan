@@ -8,17 +8,23 @@ import axios from 'axios';
 
 
 const Plastic = () => {
-   
-    const [plastic, setPlastic] = useState([]);
+
+    const [plastics, setPlastics] = useState([]);
     const [prices, setPrices] = useState({});
 
-    useEffect(() =>{
+    useEffect(() => {
         axios.get('http://192.168.29.47:5000/api/products/6 ')
-        .then((response)=>{
-           console.log("plastic.data",response.data)
-           setPlastic(response.data)
-        })
-        .catch(error => console.error('Error fetching data:', error));
+            .then((plastic) => {
+                console.log("plastic.data", plastic.data);
+                setPlastics(plastic.data)
+                const initialPrices = {};
+                plastic.data.forEach(plastic => {
+                    initialPrices[plastic.id] = 0; // Initialize prices with default value 0 for each plastic ID
+                });
+
+                setPrices(initialPrices)
+            })
+            .catch(error => console.error('Error fetching data:', error));
     }, []);
 
     const incrementPrice = (id) => {
@@ -41,7 +47,7 @@ const Plastic = () => {
         <div className='product_plastic' style={{ marginTop: "60px" }}>
             <div className='plastic-submain-body'>
                 <div className='row'>
-                    {plastic.map(item => (
+                    {plastics.map(item => (
                         <div className='col-4' key={item.id}>
                             <img className='plastic_section' src={" "} alt="" />
                             <div className='plastic_section-part'>
@@ -51,16 +57,16 @@ const Plastic = () => {
                                 kg-<CurrencyRupee /> {item.price}
                             </div>
                             <div className="plastic-container">
-                                <FontAwesomeIcon onClick={() => incrementPrice(item.id)} icon={faSquarePlus} style={{ height: "25px", width: "25px" }} />
-                                <span className="price">{prices[item.id]}</span>
                                 <FontAwesomeIcon onClick={() => decrementPrice(item.id)} icon={faSquareMinus} style={{ height: "25px", width: "25px" }} />
+                                <span className="price">{prices[item.id]}</span>
+                                <FontAwesomeIcon onClick={() => incrementPrice(item.id)} icon={faSquarePlus} style={{ height: "25px", width: "25px" }} />
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
             <div>
-            <Link to='/free'>     <button className='next_butto'>NEXT</button></Link>
+                <Link to='/free'>     <button className='next_butto'>NEXT</button></Link>
 
             </div>
         </div>

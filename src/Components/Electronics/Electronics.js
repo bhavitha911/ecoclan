@@ -349,15 +349,15 @@ const Electronics = () => {
 
     useEffect(() => {
         axios.get('http://192.168.29.47:5000/api/products/2')
-            .then((response) => {
-                console.log(response.data)
-                setElectronicsData(response.data);
+            .then((electronics) => {
+                console.log(electronics.data)
+                setElectronicsData(electronics.data);
                 console.log("electronicsData",electronicsData)
      
                 const initialPrices = {};   
-                // response.data.products.forEach(product => {
-                //     initialPrices[product.id] = 0;
-                // });
+                electronics.data.forEach(electronics => {
+                    initialPrices[electronics.id] = 0;
+                });
                 setPrices(initialPrices);
             })
             .catch(error => console.error('Error fetching data:', error));
@@ -393,9 +393,9 @@ const Electronics = () => {
                                     piece-<CurrencyRupee /> {item.price}
                                 </div>
                                 <div className="electronics-container">
-                                    <FontAwesomeIcon onClick={() => incrementPrice(item.id)} icon={faSquarePlus} style={{ height: "25px", width: "25px" }} />
-                                    <span className="price">{prices[item.id]}</span>
                                     <FontAwesomeIcon onClick={() => decrementPrice(item.id)} icon={faSquareMinus} style={{ height: "25px", width: "25px" }} />
+                                    <span className="price">{prices[item.id]}</span>
+                                    <FontAwesomeIcon onClick={() => incrementPrice(item.id)} icon={faSquarePlus} style={{ height: "25px", width: "25px" }} />
                                 </div>
                             </div>
                         ))

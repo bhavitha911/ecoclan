@@ -12,11 +12,14 @@ const Misc = () => {
 
     useEffect(() => {
         axios.get('http://192.168.29.47:5000/api/products/4')
-            .then((response) => {
-                console.log("misc.data",response.data)
-                setMiscData(response.data)
+            .then((misc) => {
+                console.log("misc.data",misc.data)
+                setMiscData(misc.data)
                 console.log("miscData",miscData)
                 const initialPrices = {};
+                misc.data.forEach(misc => {
+                    initialPrices[misc.id] = 0; // Initialize prices with default value 0 for each appliance ID
+                });
                  setPrices(initialPrices);
             })
             .catch(error => console.error('Error fetching data:', error));
@@ -50,9 +53,9 @@ const Misc = () => {
                                 kg-<CurrencyRupee /> {item.price}
                             </div>
                             <div className="misc-container">
-                                <FontAwesomeIcon onClick={() => incrementPrice(item.id)} icon={faSquarePlus} style={{ height: "25px", width: "25px" }} />
-                                <span className="price">{prices[item.id]}</span>
                                 <FontAwesomeIcon onClick={() => decrementPrice(item.id)} icon={faSquareMinus} style={{ height: "25px", width: "25px" }} />
+                                <span className="price">{prices[item.id]}</span>
+                                <FontAwesomeIcon onClick={() => incrementPrice(item.id)} icon={faSquarePlus} style={{ height: "25px", width: "25px" }} />
                             </div>
                         </div>
                     ))}
