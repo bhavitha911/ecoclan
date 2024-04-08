@@ -147,7 +147,7 @@
     width: 379;
     width: 386px;
     margin-left: 12px;
-    margin-top: -7px;
+    margin-top: -8px;
     padding-left: 11px;
     height: 101px;
 }
@@ -166,12 +166,24 @@
     border-radius: 5px;
 
 }
+.prof{
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.profe{
+ margin-left: 20px;
+ border-radius: 10px;
+ border: 2px solid black;
+ margin-top: 3px;
+}
 
 .gifths {
     height: 35px;
     width: 41px;
 
 }
+
+
 
 
 

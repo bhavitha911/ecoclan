@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import '../Rewards/Rewards.css'
 import pic from '../../images/pickup.png'
 import logout from '../../images/logout .png'
@@ -13,10 +13,27 @@ import user from '../../images/user.png'
 import { IoMdArrowBack } from "react-icons/io";
 import { GiBurningTree } from "react-icons/gi";
 import { Col, Row } from 'antd';
-
-
-
+import axios from 'axios';
+ 
 const Rewards = () => {
+
+const[rewards,setRewards]=useState();
+const[rewardss,setRewardss]=useState();
+useEffect(() => {
+    axios.get('http://192.168.29.47:5000/api/trees-planted')
+    .then(response => {
+        console.log('API Response:',response);
+        setRewards(response.data.total_trees_planted_so_far );
+        setRewardss(response.data.trees_planted_by_you);
+        console.log("rewards",rewards)
+        console.log("rewardss",rewardss)
+    })
+    .catch(error => {
+        console.error('Error fetching rewards:',error)
+
+    });
+},[]);
+
     return (
         <div className='rewards-main'>
             <div className='rewards-submain'>
@@ -26,6 +43,7 @@ const Rewards = () => {
                     </div>
                     <div className='col-8' style={{ fontSize: "25px", fontWeight: "700", paddingTop: "6px" }}>
                         <p>Rewards</p>
+                        
                     </div>
                     <div className='col-2'>
                    <Link to='/login'>    <img className='logouted' src={logout} alt=''></img></Link> 
@@ -40,6 +58,7 @@ const Rewards = () => {
                         </div>
                         <div className='col-md-5 w-75' style={{ fontSize: "25px", fontWeight: "700", paddingTop: "1px", letterSpacing: "1px" }}>
                             <p className='text-dark plant-reward'>Plant Goodness</p>
+                           
                         </div>
 
                     </div>
@@ -52,6 +71,9 @@ const Rewards = () => {
                                 <h4 className='text-white'>TRESS PLANTED</h4>
                             </div>
                             <div>
+                                <h3 className='text-white'>{rewards}</h3>
+                            </div>
+                            <div className='mb-2'>
                             <p className=' pt-5 reward_textsize'>Hi kraft testing you are a plant parent of</p>
                             </div>
                         </center>
@@ -59,8 +81,8 @@ const Rewards = () => {
                     </div>
         
                     <div className='row'>
-                        <div className='col-12 pt-2'>
-                            <h1 className='text-success'>Tree</h1>
+                        <div className='col-12 pt-5'>
+                            <h1 className='text-success'>Tree {rewardss}</h1>
                         </div>
                         <div className='col-12'>
                         <GiBurningTree />

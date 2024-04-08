@@ -166,7 +166,7 @@ const Giveaway = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get('http://192.168.29.47:5000/api/category');
+                const response = await axios.get('http://localhost:5000/api/category');
                 setCategories(response.data);
                 console.log(response)
                  

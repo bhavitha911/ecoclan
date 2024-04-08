@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import '../../Components/User/User.css'
 import pic from '../../images/pickup.png'
 import logout from '../../images/logout .png'
@@ -10,11 +10,22 @@ import gift from '../../images/giftbox.png'
 import user from '../../images/user.png'
 import { Link } from 'react-router-dom'
 import { Col, Row } from 'antd';
+import { jwtDecode } from 'jwt-decode';
 
 
 
 
 const User = () => {
+const[token,setToken]=useState('');
+useEffect(() => {
+
+const tokens = localStorage.getItem('auth');
+if(tokens){
+    const decodedToken = jwtDecode(tokens);
+
+    setToken(decodedToken.name); 
+}
+});
     return (
         <>
             <div className='main-user'>
@@ -31,7 +42,7 @@ const User = () => {
 
                     </div>
                     <div className='pt-3'>
-                        <h3>Hello,</h3>
+                        <h3>Hello <span className='text-success'>{token}</span></h3>
                     </div>
 
 
@@ -72,22 +83,22 @@ const User = () => {
                     <Row className='mt-3'>
                         <Col xs={8} sx={8} md={8}><Microsoft className='person'></Microsoft></Col>
                         <Col xs={8} sx={8} md={8}><Link to='/More' style={{ textDecoration: "none" }}>    <h6 className='more'>More</h6></Link>
-</Col>
+                        </Col>
                         <Col xs={8} sx={8} md={8}><ChevronRight className='royal' />
 
                         </Col>
-                       
+
                     </Row>
 
                     <div className='footer_user'>
-                    <Row className='container ' >
-                        <Col md={5} xs={5}><Link to='/giveaway'><img className='gifths mt-2' src={hand} alt="Hand" /></Link></Col>
-                        <Col md={5} xs={5}><Link to='/dashboard'><img className='gifths mt-2' src={globe} alt="Hand" /></Link></Col>
-                        <Col md={5} xs={5}><Link to='/Aboutcompany'><img className='gifths mt-2' src={home} alt="Hand" /></Link></Col>
-                        <Col md={5} xs={4}><Link to='/rewards'><img className='gifths mt-2' src={gift} alt="Hand" /></Link></Col>
-                        <Col md={4} xs={5}><Link to='/user'><img className='gifths mt-2' src={user} alt="Hand" /></Link></Col>
-                    </Row>
-                </div>
+                        <Row className='container ' >
+                            <Col md={5} xs={5}><Link to='/giveaway'><img className='gifths mt-2' src={hand} alt="Hand" /></Link></Col>
+                            <Col md={5} xs={5}><Link to='/dashboard'><img className='gifths mt-2' src={globe} alt="Hand" /></Link></Col>
+                            <Col md={5} xs={5}><Link to='/Aboutcompany'><img className='gifths mt-2' src={home} alt="Hand" /></Link></Col>
+                            <Col md={5} xs={4}><Link to='/rewards'><img className='gifths mt-2' src={gift} alt="Hand" /></Link></Col>
+                            <Col md={4} xs={5}><Link to='/user'><img className='gifths mt-2' src={user} alt="Hand" /></Link></Col>
+                        </Row>
+                    </div>
 
                 </div>
 

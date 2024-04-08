@@ -5,19 +5,39 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareMinus, faSquarePlus } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { jwtDecode } from "jwt-decode";
+
 
 const Misc = () => {
     const [miscData, setMiscData] = useState([]);
     const [prices, setPrices] = useState({});
+    const[bikes,setBikes]=useState([]);
+    const[userIdd,setUserIdd]=useState([]);
+    console.log("bikes",bikes)
+    console.log("userIdd",userIdd)
+    const printpricess = () =>{
+        console.log("prices",prices)
+        localStorage.setItem("quantity", JSON.stringify(prices));
+        localStorage.setItem("bikes", JSON.stringify(bikes));
+        localStorage.setItem("userIdd", JSON.stringify(userIdd));
 
+    }
     useEffect(() => {
-        axios.get('http://192.168.29.47:5000/api/products/4')
-            .then((misc) => {
-                console.log("misc.data",misc.data)
-                setMiscData(misc.data)
-                console.log("miscData",miscData)
+        const token = localStorage.getItem('auth');
+    if (token) {
+        const decodedToken = jwtDecode(token);
+  
+        setUserIdd(decodedToken.id);
+      
+      }
+        axios.get('http://localhost:5000/api/products/4')
+            .then((response) => {
+                console.log("Response from API:",response)
+                setMiscData(response.data)
+              
                 const initialPrices = {};
-                misc.data.forEach(misc => {
+
+                response.data.forEach(misc => {
                     initialPrices[misc.id] = 0; // Initialize prices with default value 0 for each appliance ID
                 });
                  setPrices(initialPrices);
@@ -33,7 +53,7 @@ const Misc = () => {
     };
 
     const decrementPrice = (id) => {
-        if (prices[id] > 0) {
+        if (prices[id] && prices[id] > 0) {
             setPrices(prevPrices => ({
                 ...prevPrices,
                 [id]: prevPrices[id] - 1
@@ -62,7 +82,7 @@ const Misc = () => {
                 </div>
             </div>
             <div>
-                <Link to='/free'><button className='next_butto'>NEXT</button></Link>
+                <Link to='/free'><button className='next_butto' onClick={printpricess}>NEXT</button></Link>
             </div>
         </div>
     );

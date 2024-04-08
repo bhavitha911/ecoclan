@@ -50,14 +50,14 @@ export const Profile = () => {
               {number === 0 && <div className='container'>
                 <div className='enter'>
                   <h6 className='holder'>Name:</h6>
-                  <input type='text' placeholder='Enter Your Name '></input>
+                  <input className='prof' type='text' placeholder='Enter Your Name '></input>
                   <div className='pt-4'>
                     <h6>Email Id:</h6>
-                    <input type='text' placeholder='Enter Your Email Address '></input>
+                    <input className='prof' type='text' placeholder='Enter Your Email Address '></input>
                   </div>
                   <div className='pt-4'>
                     <h6>Mobile Number:</h6>
-                    <input className='you' type='number' placeholder='Enter Your Number  '></input>
+                    <input className='prof' type='number' placeholder='Enter Your Number  '></input>
                   </div>
 
                 </div>
@@ -69,7 +69,7 @@ export const Profile = () => {
               {number === 1 && <div>
                 <div className='entered'>
                   <h6>Location</h6>
-                  <input type='text' placeholder='Enter Your Location'></input>
+                  <input className='prof' type='text' placeholder='Enter Your Location'></input>
                 </div>
               </div>}
             </div>
@@ -81,7 +81,7 @@ export const Profile = () => {
               {number === 2 && <div>
                 <div className='add'>
                   <h6>+ Add a new Address</h6>
-                  <input type='text' placeholder='Enter Address'></input>
+                  <input  className='profe' type='text' placeholder='Enter Address'></input>
                 </div>
               </div>}
             </div>

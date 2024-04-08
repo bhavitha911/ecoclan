@@ -27,6 +27,9 @@
     margin-left: 27px;
 
 }
+.card-body-about{
+    height: 230px;
+}
 
 .about-amit{
     font-weight:700;
@@ -77,6 +80,9 @@
     margin-top: 10px !important;
     margin-left: 3px !important;
     width: 398px;
+}
+.readd{
+    height:400px
 }
 
 .truck {
@@ -176,7 +182,7 @@ margin-left: 19px;
 
 
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 500px) {
 
 
     .Aboutcompany-main {
@@ -205,9 +211,7 @@ margin-left: 19px;
         color: white;
         margin-left: 135px !important;
         margin-top: 11px !important;
-
-    }
-    .abouted{
+ 
         overflow-x: hidden;
         overflow-y: scroll;
         max-height: 820px;
@@ -226,7 +230,8 @@ margin-left: 19px;
 
     }
     .about-head{
-        margin-left: 117px;
+        margin-left: 110px!important;
+        width: 50%;
        
     }
 
@@ -246,6 +251,10 @@ margin-left: 19px;
         margin-left: 27px;
         width: 178px;
     
+    }
+    .card-body-about{
+        height: 230px;
+        width: 150px;
     }
     .whyus {
         background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
@@ -270,10 +279,11 @@ margin-left: 19px;
 
     }
     .card-header {
-    width: 177px;
+    width: 100%;
     background-image: linear-gradient(to right, rgba(27, 235, 23, 0.822), hsl(173, 59%, 65%));
     height: 90px;
 }
+
 .card-about{
     padding-left: 90px;
 }
@@ -297,7 +307,9 @@ margin-left: 19px;
         width: 190px;
         font-weight: 800;
     }
-   
+   .card about-head{
+    width: 100%;
+   }
 
     .trustedd {
         font-size: 13px;
@@ -388,13 +400,13 @@ margin-left: 19px;
 
     }
    .about-column{
-    margin-left: 30px;
+    margin-left:0px;
    }
    .about-second{
-    margin-left: -30px;
+    margin-left: 0px;
    }
    .card-text{
-    width:150px;
+    width:100%;
     text-align:start ;
 }
 

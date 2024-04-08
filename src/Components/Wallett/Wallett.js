@@ -24,30 +24,28 @@ import train from '../../images/high-speed-train.png'
 import wifi from '../../images/wifi-signal.png'
 import busticket from '../../images/bus-ticket.png'
 import axios from 'axios';
-
+import { jwtDecode } from "jwt-decode";
 export const Wallett = () => {
-  const [walletData, setWalletData] = useState([]);
-
+  const [balance, setBalance] = useState();
+  const [userName, setUserName] = useState('');
   useEffect(() => {
-    fetchWalletData();
-  }, []);
+    const token = localStorage.getItem('auth');
+    if (token) {
+      const decodedToken = jwtDecode(token);
 
-  const fetchWalletData = () => {
-    axios.get('http://192.168.29.47:5000/api/wallet-updated')
+      setUserName(decodedToken.name);
+    }
+    axios.get('http://localhost:5000/api/balance')
       .then(response => {
-        console.log(response);
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        setWalletData(data);
+        console.log('API Response:', response );
+        setBalance(response.data.balance )
+          console.log("balance",balance)
       })
       .catch(error => {
-        console.error('Error fetching wallet data:', error);
+        console.error('Error fetching balance:', error);
       });
-  };
+  }, []);
+
   return (
     <>
       <div className='main_Portion'>
@@ -68,11 +66,12 @@ export const Wallett = () => {
                 <Link className=''style={{color:"black"}}to='/User'> <IoMdArrowBack /></Link>
               </div>
               <div className='col-5 pt-4'>
-                <h4 style={{ textAlign: "justify" }}>Hello</h4>
+                <h4 style={{ textAlign: "justify" }}>Hello <span className='text-success'>{userName}</span></h4>
                 <p className='available'>Your Available Balance</p>
               </div>
               <div className='col-4   pt-4'>
-                <h2 className='currencyy'> <CurrencyRupee></CurrencyRupee></h2>
+                <h2 className='currencyy'> <CurrencyRupee/><span className='text-success'>{balance}</span></h2>
+      
                 <h6><button className='redee'>Redeem</button></h6>
               </div>
               <div className='col-12 pt-0'>
@@ -159,3 +158,7 @@ export const Wallett = () => {
     </>
   )
 }
+
+
+
+

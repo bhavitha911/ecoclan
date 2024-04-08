@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../AboutCompany/AboutCompany.css'
 import pic from '../../images/pickup.png'
 import logout from '../../images/logout .png'
@@ -22,6 +22,58 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import shobha from "../../images/carousel-img3.jpeg";
 import bhavitha from '../../images/carousel-img4.jpeg'
 const AboutCompany = () => {
+    const [showFullText, setShowFullText] = useState({});
+    const handleClick = (id) => {
+        setShowFullText((prevState) => ({
+            ...prevState,
+            [id]: !prevState[id],
+        }));
+    };
+    const contentData = [
+        {
+            id: 1,
+            title: "Amit",
+            image: moneyman,
+            text:
+                "Extremely prompt service very polite customer and interhelper and the collection team was though helpful and very neat.",
+        },
+        { id: 2, 
+            title: "Ria", 
+            image: moneyman, 
+            text: "Hassel free good experience with EcoClan.Home pickup service is very convenient and a great initative.",
+    },
+        {
+            id: 3,
+            title: "Kriti",
+            image: moneyman,
+            text:"Extremely prompt service very polite customer and interhelper and the collection team was though helpful and very neat.",
+
+        },
+        {
+            id: 4,
+            title: "Rahul",
+            image: moneyman,
+            text:
+                "Hassel free good experience with EcoClan.Home pickup service is very convenient and a great initative.",
+        },
+        {
+            id: 5,
+            title: "Sana",
+            image: moneyman,
+            text:
+            "Extremely prompt service very polite customer and interhelper and the collection team was though helpful and very neat.",
+        },
+        {
+            id: 6,
+            title: "Raju",
+            image: moneyman,
+            text:
+            "Hassel free good experience with EcoClan.Home pickup service is very convenient and a great initative.",
+        },
+    ];
+
+
+
 
     return (
         <div className='Aboutcompany-main'>
@@ -34,7 +86,7 @@ const AboutCompany = () => {
                         <p style={{ fontSize: "25px", fontWeight: "700", paddingTop: "9px" }}>EcoClan</p>
                     </div>
                     <div className='col-2'>
-                    <Link to='/login'>    <img className='logouted' src={logout} alt=" "></img></Link>
+                        <Link to='/login'>    <img className='logouted' src={logout} alt=" "></img></Link>
                     </div>
 
                 </div>
@@ -60,7 +112,7 @@ const AboutCompany = () => {
                             pagination={{
                                 clickable: true,
                             }}
-                           
+
                             modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"
                         >
@@ -68,7 +120,7 @@ const AboutCompany = () => {
                             <SwiperSlide><img className='dustbinn' src={shobha} /></SwiperSlide>
                             <SwiperSlide><img className='dustbinn' src={bhavitha} /></SwiperSlide>
 
-                            
+
 
                         </Swiper>
 
@@ -133,37 +185,42 @@ const AboutCompany = () => {
                         </div>
                     </div>
 
-  
 
 
-                     <div className='row mt-2'>
-                        <div className='col-6 about-column'>
-                            <div class="card about-head">
-                                <div className='card-header d-flex'>
-                                    <img className='rounded-circle' src={moneyman} />
-                                    <p className='pt-4 about-amit'>Amit</p>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Extremely prompt service very polite customer and interhelper and the collection team was though helpful and very neat.Really appreciate the work put in.</p>
-                                </div>
-
-                            </div>
-                        </div> 
-                        <div className='col-6 about-second'>
-                            <div class="card about-body">
-                                <div className='card-header d-flex'>
-                                    <img className='rounded-circle' src={moneyman} />
-                                    <p className='pt-4 about-shan'>Shanice</p>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text-hasel">Hassel free good experience with EcoClan.Home pickup service is very convenient and a great initative to save the environment. will surely recommend to others.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div> 
 
                     <div className='row mt-2'>
+                        {contentData.map((contentItem) => (
+                            <div className='col-6 about-column mb-3'>
+                                <div class="card about-head">
+                                    <div className='card-header d-flex'>
+                                        <img className='rounded-circle' src={contentItem.image} />
+                                        <p className='pt-4 about-amit'>{contentItem.title}</p>
+                                    </div>
+                                    <div class="card-body-about"style={{height:"230px"}} >
+                                        <p>
+                                            {showFullText[contentItem.id]
+                                                ? contentItem.text
+                                                : `${contentItem.text.slice(0, 60)}...`}
+                                        </p>
+                                        {showFullText[contentItem.id] ? (
+                                            <a  className='btn text-success' onClick={() => handleClick(contentItem.id)}>
+                                                Read less
+                                            </a>
+                                        ) : (
+                                            <a className='btn text-success' onClick={() => handleClick(contentItem.id)}>
+                                              <p > Read more</p> 
+                                            </a>
+                                        )}
+                                    </div>
+                                    </div>
+
+                                </div>
+                        ))}
+
+                        
+                    </div>
+
+                    {/* <div className='row mt-2'>
                         <div className='col-6 about-column'>
                             <div class="card about-head">
                                 <div className='card-header d-flex'>
@@ -216,7 +273,7 @@ const AboutCompany = () => {
 
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
 
 
@@ -229,10 +286,10 @@ const AboutCompany = () => {
 
                 <div className='row aboutcompany-box '>
                     <div className='col-2'>
-                    <Link to='/giveaway'>       <img className='gifts' src={hand}></img></Link> 
+                        <Link to='/giveaway'>       <img className='gifts' src={hand}></img></Link>
                     </div>
                     <div className='col-2'>
-                  <Link to='/dashboard'>   <img className='gifts' src={globe}></img></Link>   
+                        <Link to='/dashboard'>   <img className='gifts' src={globe}></img></Link>
                     </div>
                     <div className='col-3'>
                         <Link to='/AboutCompany'>    <img className='gifts' src={home}></img></Link>
@@ -242,7 +299,7 @@ const AboutCompany = () => {
                     </div>
                     <div className='col-2'>
 
-                    <Link to='/user'>   <img className='gifts' src={user}></img></Link>
+                        <Link to='/user'>   <img className='gifts' src={user}></img></Link>
                     </div>
 
                 </div>
@@ -261,3 +318,4 @@ const AboutCompany = () => {
 }
 
 export default AboutCompany
+

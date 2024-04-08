@@ -39,14 +39,13 @@ const Login = () => {
         const isValid = validateForm();
         if (isValid) {
             try {
-                const response = await axios.post('http://192.168.29.47:5000/api/login', {
+                const response = await axios.post('http://localhost:5000/api/login', {
                     mobile: data.mobile,
                     password: data.password
                 });
-    
-                if (response.status === 200) {
+                 if (response.status === 200) {
                     localStorage.setItem("auth", JSON.stringify(response.data.token));
-                    console.log("Login successful");
+                    console.log("Login successful",response);
                     window.location.href = "/dashboard"; // Redirect to dashboard
                 }
             } catch (error) {
