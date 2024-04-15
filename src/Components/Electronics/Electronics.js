@@ -24,11 +24,8 @@ const Electronics = () => {
             .then((response) => {
                 setElectronicsData(response.data);
 
-                const initialPrices = {};
-                response.data.forEach(electronics => {
-                    initialPrices[electronics.id] = 0;
-                });
-                setPrices(initialPrices);
+                const storedPrices = JSON.parse(localStorage.getItem("prices")) || {};
+                setPrices(storedPrices);
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
@@ -36,7 +33,7 @@ const Electronics = () => {
     }, []);
 
     useEffect(() => {
-        localStorage.setItem("quantity", JSON.stringify(prices));
+        localStorage.setItem("prices", JSON.stringify(prices));
         localStorage.setItem("bike", JSON.stringify(bike));
         localStorage.setItem("userId", JSON.stringify(userId));
     }, [prices, bike, userId]);
@@ -44,7 +41,7 @@ const Electronics = () => {
     const incrementPrice = (id) => {
         setPrices(prevPrices => ({
             ...prevPrices,
-            [id]: prevPrices[id] + 1
+            [id]: (prevPrices[id] || 0) + 1
         }));
         if (!bike.includes(id)) {
             setBike((bike) => [...bike, id]);
@@ -74,7 +71,7 @@ const Electronics = () => {
                                 </div>
                                 <div className="electronics-container">
                                     <FontAwesomeIcon onClick={() => decrementPrice(item.id)} icon={faSquareMinus} style={{ height: "25px", width: "25px" }} />
-                                    <span className="price">{prices[item.id]}</span>
+                                    <span className="price">{prices[item.id] || 0}</span>
                                     <FontAwesomeIcon onClick={() => incrementPrice(item.id)} icon={faSquarePlus} style={{ height: "25px", width: "25px" }} />
                                 </div>
                             </div>
@@ -94,4 +91,3 @@ const Electronics = () => {
 }
 
 export default Electronics;
-
